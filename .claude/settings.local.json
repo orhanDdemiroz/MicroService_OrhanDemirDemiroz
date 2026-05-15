@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet --version)",
+      "Bash(dotnet build *)",
+      "Bash(dotnet ef *)",
+      "Bash(git -C /Users/demiroz/Desktop/MicroService_OrhanDemirDemiroz-main/Demir remote -v)",
+      "Bash(brctl status *)",
+      "Bash(xattr -dr com.apple.quarantine /Users/demiroz/Desktop/MicroService_OrhanDemirDemiroz-main)",
+      "Bash(xattr /Users/demiroz/Desktop/MicroService_OrhanDemirDemiroz-main/Users.API/Properties/launchSettings.json)",
+      "Bash(brctl download *)",
+      "Bash(pgrep -af \"dotnet.*Users.API\\\\|dotnet.*Books.API\" 2>&1; echo \"---\"; ls -la ~/Projects 2>&1 | head -3)",
+      "Bash(mkdir -p /Users/demiroz/Projects)",
+      "Bash(mv /Users/demiroz/Desktop/MicroService_OrhanDemirDemiroz-main /Users/demiroz/Projects/)",
+      "Bash(sqlite3 UsersDB \".tables\")",
+      "Bash(sqlite3 UsersDB \"SELECT * FROM Roles;\")",
+      "Bash(sqlite3 UsersDB \"SELECT Id, UserName, IsActive FROM Users;\")",
+      "Bash(sqlite3 UsersDB \"SELECT Id, UserName, Password, IsActive FROM Users;\")",
+      "Bash(sqlite3 UsersDB \"SELECT * FROM UserRoles;\")",
+      "Bash(sqlite3 BooksDB \".tables\")",
+      "Bash(sqlite3 BooksDB \"SELECT * FROM Publishers;\")",
+      "Bash(sqlite3 BooksDB \"SELECT * FROM Authors;\")"
+    ]
+  }
+}
