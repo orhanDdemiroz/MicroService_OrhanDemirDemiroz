@@ -56,3 +56,6 @@ artifacts/
 
 # SQLite databases
 *.db
+
+# Claude Code
+.claude/
